@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/fonts.css">
+  <link rel="stylesheet" type="text/css" href="styles/global.css">
+  <link rel="stylesheet" type="text/css" href="styles/lab_four_starter.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Google Font Roboto -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="styles/lab_four_starter.css"> <!-- Link to your new CSS file -->
+  <title>Sneaker Store</title>
+</head>
+
+<body>
+  <section class="hero-container">
+    <div class="hero-content">
+      <img src="assets/4.jpg" alt="Sneaker Banner" class="hero-image">
+      <div class="hero-text">
+        <h1>Welcome to our Sneaker Store</h1>
+        <p>Find the perfect pair of sneakers for your style!</p>
+      </div>
+    </div>
+  </section>
+  <section class="container content-container">
+    <div class="content">
+      <h2>Featured Sneakers</h2>
+      <p>Explore our latest collection of sneakers, designed to elevate your style and comfort.</p>
+      <img src="assets/3.jpg" alt="Sneaker" class="sneaker-image">
+      <button class="explore-button">Explore Now</button>
+    </div>
+  </section>
+  <section class="container accordion-container">
+    <div class="accordion">
+      <input type="checkbox" id="accordion-item-1" class="accordion-toggle">
+      <label for="accordion-item-1" class="accordion-header">Accordion Item 1</label>
+      <div class="accordion-content">
+        <p>This is the content of Accordion Item 1.</p>
+      </div>
+
+      <input type="checkbox" id="accordion-item-2" class="accordion-toggle">
+      <label for="accordion-item-2" class="accordion-header">Accordion Item 2</label>
+      <div class="accordion-content">
+        <p>This is the content of Accordion Item 2.</p>
+      </div>
+      <!-- Add more accordion items as needed -->
+    </div>
+  </section>
+  <section class="container accordion-container">
+    <!-- Remove and add accordion HTML -->
+    <div class="remove-assignment-content">
+      <h1>Accordion</h1>
+    </div>
+  </section>
+  <title>Responsive Footer</title>
+  <style>
+    /* Basic styling for footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Style for the link list */
+    footer ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    footer ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    footer ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Style for the embedded Google map */
+    #map {
+      height: 200px;
+      width: 100%;
+      margin-top: 20px;
+    }
+  </style>
+  </head>
+
+  <body>
+    <footer>
+      <div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <span id="copyright">
+          &copy; <span id="year"></span> CITY SNEAKER. All rights reserved.
+        </span>
+      </div>
+      <div id="map"></div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80109.25877895398!2d-114.2537425630003!3d51.13771004223082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716f9268a69e81%3A0xb1db5e68bd61e28!2z5Y2X6Zi_5bCU5Lyv5aGU55CG5bel5a2m6Zmi!5e0!3m2!1szh-CN!2sca!4v1709698416051!5m2!1szh-CN!2sca"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+
+    <!-- JavaScript to update copyright year -->
+    <script>
+      var year = new Date().getFullYear();
+      document.getElementById('year').innerHTML = year;
+    </script>
+
+
+
+</html>
